@@ -54,6 +54,10 @@
 			// change the map zoom so that all the data is shown
 			mymap.fitBounds(earthquakelayer.getBounds());
 		}
+
+		function removeEarthquakeData(){
+			alert("remove the earthquake data here");
+		}
 	</script>
 
 
@@ -64,8 +68,8 @@
 	<div id="mapid" style="width:600px;height:400px;"></div>
 	<!-- the following script will load the map and set the default view and zoom, as well as loading the basemap tiles -->
 
-	<button id="loadData" name="loadData" onclick="loadEarthquakeData()">click here to load the data
-	</button>
+	<button id="loadData" name="loadData" onclick="loadEarthquakeData()">click here to load the data</button>
+	<button id="removeEarthquakeData" name="removeEarthquakeData" onclick="removeEarthquakeData()">click here to remove earthquakedata</button>
 
 	<script>
 		//load the map 
